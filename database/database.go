@@ -10,11 +10,6 @@ import (
 )
 
 func Connect(db *gorm.DB) *gorm.DB {
-	//config, err := godotenv.Read()
-	//if err != nil {
-	//	log.Fatal("Error reading .env file")
-	//}
-
 	dbUser := os.Getenv("DB_USER")
 	dbPasswd := os.Getenv("DB_PASSWD")
 	dbAddr := os.Getenv("DB_ADDR")
